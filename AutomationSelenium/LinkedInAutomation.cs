@@ -22,9 +22,6 @@ namespace AutomationSelenium
         public void NUnitSeleniumTest()
         {
 
-
-            //string driverPath = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\..\\")); ;
-            //IWebDriver chrome = new ChromeDriver(driverPath + "\\Drivers");
             new DriverManager().SetUpDriver(new ChromeConfig());
 
             IWebDriver chrome  = new ChromeDriver();
@@ -59,7 +56,7 @@ namespace AutomationSelenium
                     postLinks.Add(hrefs.Split("?")[0]);
                 }
             }
-        var commentDictionary = new List<string>();
+            var commentDictionary = new List<string>();
 
             foreach (var url in postLinks)
             {
